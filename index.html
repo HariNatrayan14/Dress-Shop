@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dress Shop</title>
+    <link href="./output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Preahvihear&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      body {
+        font-family: "Cabin Condensed ", "roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!-- nav  -->
@@ -20,79 +33,422 @@
       >
         <div>
           <img
-            src="/src/image/dlogo.png"
+            src="/image/dlogo.png"
             class="rounded-full w-[100px] md:w-[150px]"
           />
         </div>
         <div class="hidden md:flex justify-center gap-5 text-[18px]">
-          <a href="/src/index.html">Ethnicwear</a>
-          <a href="/src/Kurti set.html">Kurti set</a>
-          <a href="/src/bottomwear.html" class="text-[#A15A3C]"
-            ><b>Bottom Wear</b></a
-          >
+          <a href="/index.html" class="text-[#A15A3C]"><b>Ethnicwear</b></a>
+          <a href="/Kurti set.html">Kurti set</a>
+          <a href="/bottomwear.html">Bottom Wear</a>
           <a href="">Track Order</a>
           <a href="">New Arrivals</a>
         </div>
         <div class="flex items-center gap-1">
-          <img src="/src/image/search.svg" />
-          <img src="/src/image/profile.svg" />
-          <img src="/src/image/heart.svg" />
-          <img src="/src/image/cart.svg" />
+          <img src="/image/search.svg" />
+          <img src="/image/profile.svg" />
+          <img src="/image/heart.svg" />
+          <img src="/image/cart.svg" />
         </div>
       </div>
     </section>
-    <!-- img  -->
-    <section class="flex justify-center mt-5 md:mt-16">
-      <div class="relative">
-        <img src="/src/image/d30.png" class="w-[330px] md:w-[1010px]" /><button
-          class="bg-white text-[#A15A3C] w-[80px] font-medium text-[10px] md:text-[20px] hover:text-white hover:bg-[#552a18] p-1 md:p-4 rounded-lg absolute md:right-16 bottom-5 right-11 md:bottom-8"
-        >
-          Shop Now
-        </button>
+
+    <!-- collection  -->
+    <section>
+      <div class="flex justify-center mt-6 md:mt-16">
+        <div class="relative px-4 md:px-0">
+          <img src="/image/d3.png" class="md:w-[1010px] md:block hidden" />
+          <img src="/image/d3a.png" class="block md:hidden" />
+
+          <div
+            class="absolute flex flex-col g-3 md:gap-4 bottom-5 left-9 text-[14px] md:top-14 md:left-16 md:text-[18px]"
+          >
+            <h1 class="font-bold">COLLECTION</h1>
+            <p class="block md:hidden">
+              Discover the beauty of India fashion within our <br />
+              selected clothing to be worn on any occasion<br />
+              that would make you stylish and at the same time comfortable.
+              Every piece iscarefully<br />
+              sewn to give you the best quality with beautiful fabrics <br />and
+              fine details throughout <br />to give you grace and class.
+            </p>
+            <p class="hidden md:block">
+              Discover the beauty of India fashion within our selected<br />
+              clothing to be worn on any occasion that would make you<br />
+              stylish and at the same time comfortable. Every piece is<br />carefully
+              sewn to give you the best quality with beautiful<br />
+              fabrics and fine details throughout to give you grace and class.
+            </p>
+            <button
+              class="w-[120px] md:w-[150px] hover:border bg-[#A15A3C] hover:bg-[#552a18] text-white rounded-md p-1 mt-1 md:p-3"
+            >
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fav  -->
+    <div
+      class="flex items-center justify-around text-[16px] md:text-[26px] mt-5 md:mt-16"
+    >
+      <div
+        class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
+      ></div>
+      <h1>Wardrobe Favorite</h1>
+      <div
+        class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
+      ></div>
+    </div>
+    <!-- fav dress img  -->
+    <section
+      class="swiper flex md:justify-center items-center py-4 overflow-hidden mt-3 text-[10px] md:text-[22px] md:mt-16 md:gap-10 justify-start"
+    >
+      <div class="gap-2 swiper-wrapper">
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d4.png" class="w-[100px] md:w-[150px]" />
+          <h3>Kurti Set</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d5.png" class="w-[100px] md:w-[150px]" />
+          <h3>Movie Recreation</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d6.png" class="w-[100px] md:w-[150px]" />
+          <h3>Stay Comfort</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d7.png" class="w-[100px] md:w-[150px]" />
+          <h3>Bottom Wear</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d8.png" class="w-[100px] md:w-[150px]" />
+          <h3>Unstitched suit set</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d4.png" class="w-[100px] md:w-[150px]" />
+          <h3>Kurti Set</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d5.png" class="w-[100px] md:w-[150px]" />
+          <h3>Movie Recreation</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d6.png" class="w-[100px] md:w-[150px]" />
+          <h3>Stay Comfort</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d7.png" class="w-[100px] md:w-[150px]" />
+          <h3>Bottom Wear</h3>
+        </div>
+        <div class="flex flex-col items-center swiper-slide hover:scale-110">
+          <img src="/image/d8.png" class="w-[100px] md:w-[150px]" />
+          <h3>Unstitched suit set</h3>
+        </div>
+      </div>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: true,
+          freemode: true,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
+          },
+        });
+      </script>
+    </section>
+    <!-- New Arrivals  -->
+    <div
+      class="flex items-center justify-around text-[16px] md:text-[26px] md:mt-16"
+    >
+      <div
+        class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
+      ></div>
+      <h1>New Arrivals</h1>
+      <div
+        class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
+      ></div>
+    </div>
+    <section
+      class="flex flex-wrap items-center justify-start gap-2 overflow-hidden md:justify-center md:gap-10 md:mt-14"
+    >
+      <div
+        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
+      >
+        <div class="relative">
+          <img src="/image/d9.png" class="w-[150px] md:w-[250px]" />
+          <p
+            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
+          >
+            NEW
+          </p>
+          <img
+            src="/image/heart.svg"
+            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
+          />
+        </div>
+        <h2 class="font-bold text-[10px] md:text-[20px]">
+          Blue Chanderi Print
+        </h2>
+        <p class="text-[10px] md:text-[22px]">Rs. 1499.00</p>
+        <div class="flex">
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+        </div>
+        <div class="flex gap-2 mt-2">
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            S
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            M
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            L
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            XL
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
+          >
+            2XL
+          </p>
+        </div>
+      </div>
+      <div
+        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
+      >
+        <div class="relative">
+          <img src="/image/d10.png" class="w-[150px] md:w-[250px]" />
+          <p
+            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
+          >
+            NEW
+          </p>
+          <img
+            src="/image/heart.svg"
+            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
+          />
+        </div>
+        <h2 class="font-bold text-[10px] md:text-[20px]">
+          Block Kurti With Pattern
+        </h2>
+        <p class="text-[10px] md:text-[22px]">Rs. 1399.00</p>
+        <div class="flex">
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+        </div>
+        <div class="flex gap-2 mt-2">
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            S
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            M
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            L
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            XL
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
+          >
+            2XL
+          </p>
+        </div>
+      </div>
+      <div
+        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
+      >
+        <div class="relative">
+          <img src="/image/d11.png" class="w-[150px] md:w-[250px]" />
+          <p
+            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
+          >
+            NEW
+          </p>
+          <img
+            src="/image/heart.svg"
+            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
+          />
+        </div>
+        <h2 class="font-bold text-[10px] md:text-[20px]">Cupid Stroke</h2>
+        <p class="text-[10px] md:text-[22px]">Rs. 1659.00</p>
+        <div class="flex">
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+        </div>
+        <div class="flex gap-2 mt-2">
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            S
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            M
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            L
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            XL
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
+          >
+            2XL
+          </p>
+        </div>
+      </div>
+      <div
+        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
+      >
+        <div class="relative">
+          <img src="/image/d12.png" class="w-[150px] md:w-[250px]" />
+          <p
+            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
+          >
+            NEW
+          </p>
+          <img
+            src="/image/heart.svg"
+            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
+          />
+        </div>
+        <h2 class="font-bold text-[10px] md:text-[20px]">
+          Floral Print Chanderi Kurti
+        </h2>
+        <p class="text-[10px] md:text-[22px]">Rs. 1399.00</p>
+        <div class="flex">
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+        </div>
+        <div class="flex gap-2 mt-2">
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            S
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            M
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            L
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
+          >
+            XL
+          </p>
+          <p
+            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
+          >
+            2XL
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Bottomwear  -->
+    <!-- view button -->
+    <div
+      class="text-[10px] md:text-[20px] hidden md:flex justify-center md:mt-10"
+    >
+      <button
+        class="px-1 py-1 text-white bg-[#A15A3C] hover:bg-[#552a18] rounded-lg md:px-4 md:py-2"
+      >
+        View
+      </button>
+    </div>
+    <!-- New Arrivals  -->
     <div
       class="flex items-center justify-around text-[16px] mt-6 md:text-[26px] md:mt-16"
     >
       <div
         class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
       ></div>
-      <h1>Bottom Wear</h1>
+      <h1>Best Sellings</h1>
       <div
         class="bg-black bg-opacity-50 h-[0.3px] w-[100px] md:w-[550px]"
       ></div>
     </div>
-    <!-- img  -->
     <section
-      class="flex items-center justify-start gap-2 overflow-hidden md:justify-center md:gap-10 md:mt-14"
+      class="flex flex-wrap items-center justify-start gap-2 overflow-hidden md:justify-center md:gap-10 md:mt-14"
     >
       <div
         class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
       >
         <div class="relative">
-          <img src="/src/image/d31.png" class="w-[200px] md:w-[250px]" />
+          <img src="/image/d13.png" class="w-[150px] md:w-[250px]" />
           <p
             class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
           >
             NEW
           </p>
           <img
-            src="/src/image/heart.svg"
+            src="/image/heart.svg"
             class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
           />
         </div>
-        <h2 class="font-bold text-[10px] md:text-[20px]">
-          SOLID Straight pant Gold
-        </h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
+        <h2 class="font-bold text-[10px] md:text-[20px]">Blue Organza Kurti</h2>
+        <p class="text-[10px] md:text-[22px]">Rs. 1699.00</p>
         <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
         </div>
         <div class="flex gap-2 mt-2">
           <p
@@ -126,26 +482,26 @@
         class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
       >
         <div class="relative">
-          <img src="/src/image/d32.png" class="w-[200px] md:w-[250px]" />
+          <img src="/image/d14.png" class="w-[150px] md:w-[250px]" />
           <p
             class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
           >
             NEW
           </p>
           <img
-            src="/src/image/heart.svg"
+            src="/image/heart.svg"
             class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
           />
         </div>
         <h2 class="font-bold text-[10px] md:text-[20px]">
-          COTTON LEGGINGS Peach
+          Purple Organza Kurti
         </h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
+        <p class="text-[10px] md:text-[22px]">Rs. 1499.00</p>
         <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
         </div>
         <div class="flex gap-2 mt-2">
           <p
@@ -179,26 +535,26 @@
         class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
       >
         <div class="relative">
-          <img src="/src/image/d33.png" class="w-[200px] md:w-[250px]" />
+          <img src="/image/d15.png" class="w-[150px] md:w-[250px]" />
           <p
             class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
           >
             NEW
           </p>
           <img
-            src="/src/image/heart.svg"
+            src="/image/heart.svg"
             class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
           />
         </div>
         <h2 class="font-bold text-[10px] md:text-[20px]">
-          COTTON LEGGINGS Pink
+          Floral Hakoba Kurti
         </h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
+        <p class="text-[10px] md:text-[22px]">Rs. 1699.00</p>
         <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
         </div>
         <div class="flex gap-2 mt-2">
           <p
@@ -232,25 +588,25 @@
         class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
       >
         <div class="relative">
-          <img src="/src/image/d34.png" class="w-[200px] md:w-[250px]" />
+          <img src="/image/d16.png" class="w-[150px] md:w-[250px]" />
           <p
             class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
           >
             NEW
           </p>
           <img
-            src="/src/image/heart.svg"
+            src="/image/heart.svg"
             class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
           />
         </div>
         <h2 class="font-bold text-[10px] md:text-[20px]">
-          COTTON LEGGINGS ORANGE
+          Yellow Sarin Organza
         </h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
+        <p class="text-[10px] md:text-[22px]">Rs. 1599.00</p>
         <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
+          <img src="/image/Star 4.svg" alt="" />
         </div>
         <div class="flex gap-2 mt-2">
           <p
@@ -281,217 +637,97 @@
         </div>
       </div>
     </section>
-
-    <section
-      class="flex items-center justify-start gap-2 mt-5 overflow-hidden md:justify-center md:gap-10 md:mt-14"
+    <!-- view button -->
+    <div
+      class="text-[10px] md:text-[20px] hidden md:flex justify-center md:mt-10"
     >
-      <div
-        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
+      <button
+        class="px-1 py-1 text-white bg-[#A15A3C] hover:bg-[#552a18] rounded-lg md:px-4 md:py-2"
       >
-        <div class="relative">
-          <img src="/src/image/d35.png" class="w-[200px] md:w-[250px]" />
-          <p
-            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
-          >
-            NEW
-          </p>
-          <img
-            src="/src/image/heart.svg"
-            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
-          />
-        </div>
-        <h2 class="font-bold text-[10px] md:text-[20px]">Cupids Heart</h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
-        <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-        </div>
-        <div class="flex gap-2 mt-2">
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            S
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            M
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            L
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            XL
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
-          >
-            2XL
-          </p>
-        </div>
+        View
+      </button>
+    </div>
+    <!-- review  -->
+    <section class="bg-[#D9D9D9]/50 mt-10 mb-3 py-2 md:py-10">
+      <div class="text-3xl font-bold text-center">
+        <h1>Testimonials</h1>
       </div>
-      <div
-        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
-      >
-        <div class="relative">
-          <img src="/src/image/d36.png" class="w-[200px] md:w-[250px]" />
-          <p
-            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
-          >
-            NEW
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <div class="bg-[#F9FAFB] mt-10 md:w-[320px] rounded-xl p-6">
+          <div class="flex gap-1">
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+          </div>
+          <p class="text-sm text-[#6B7280]/40">
+            Good quality resonable price..excellent and unique collection
           </p>
-          <img
-            src="/src/image/heart.svg"
-            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
-          />
+          <div class="flex items-center w-full gap-2 mt-2">
+            <img
+              src="/image/bonnie-green.png"
+              class="w-[40px] rounded-full border border-black"
+              alt="image"
+            />
+            <div>
+              <h1 class="text-[14px] font-semibold">Bonnie Green</h1>
+              <p class="text-[#6B7280] text-sm">CTO at Open AI</p>
+            </div>
+          </div>
         </div>
-        <h2 class="font-bold text-[10px] md:text-[20px]">Cupids Heart</h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
-        <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
+        <div class="bg-[#F9FAFB] mt-10 md:w-[320px] rounded-xl p-6">
+          <div class="flex gap-1">
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+          </div>
+          <p class="text-sm text-[#6B7280]/40">
+            Good quality resonable price..excellent and unique collection
+          </p>
+          <div class="flex items-center w-full gap-2 mt-2">
+            <img
+              src="/image/bonnie-green.png"
+              class="w-[40px] rounded-full border border-black"
+              alt="image"
+            />
+            <div>
+              <h1 class="text-[14px] font-semibold">Bonnie Green</h1>
+              <p class="text-[#6B7280] text-sm">CTO at Open AI</p>
+            </div>
+          </div>
         </div>
-        <div class="flex gap-2 mt-2">
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            S
+        <div class="bg-[#F9FAFB] mt-10 md:w-[320px] rounded-xl p-6">
+          <div class="flex gap-1">
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+            <img src="/image/Star 4.svg" alt="" />
+          </div>
+          <p class="text-sm text-[#6B7280]/40">
+            Good quality resonable price..excellent and unique collection
           </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            M
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            L
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            XL
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
-          >
-            2XL
-          </p>
-        </div>
-      </div>
-      <div
-        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
-      >
-        <div class="relative">
-          <img src="/src/image/d37.png" class="w-[200px] md:w-[250px]" />
-          <p
-            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
-          >
-            NEW
-          </p>
-          <img
-            src="/src/image/heart.svg"
-            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
-          />
-        </div>
-        <h2 class="font-bold text-[10px] md:text-[20px]">Cupids Heart</h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
-        <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-        </div>
-        <div class="flex gap-2 mt-2">
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            S
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            M
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            L
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            XL
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
-          >
-            2XL
-          </p>
-        </div>
-      </div>
-      <div
-        class="p-3 rounded-lg shadow-lg hover:border md:hover:shadow-[#C1C1C1]"
-      >
-        <div class="relative">
-          <img src="/src/image/d38.png" class="w-[200px] md:w-[250px]" />
-          <p
-            class="bg-black text-[10px] md:text-[20px] w-[33px] md:w-[60px] absolute px-1 md:top-3 top-2 md:left-1 rounded-xl md:px-2 text-white"
-          >
-            NEW
-          </p>
-          <img
-            src="/src/image/heart.svg"
-            class="w-[20px] p-1 absolute top-2 bg-red-200 rounded-full right-2 md:top-2 md:right-2"
-          />
-        </div>
-        <h2 class="font-bold text-[10px] md:text-[20px]">Cupids Heart</h2>
-        <p class="text-[10px] md:text-[22px]">Rs. 699.00</p>
-        <div class="flex">
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-          <img src="/src/image/Star 4.svg" alt="" />
-        </div>
-        <div class="flex gap-2 mt-2">
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            S
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            M
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            L
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[34px] px-1 rounded-sm"
-          >
-            XL
-          </p>
-          <p
-            class="border border-black border-opacity-50 text-[10px] md:text-[20px] md:w-[44px] px-1 rounded-sm"
-          >
-            2XL
-          </p>
+          <div class="flex items-center w-full gap-2 mt-2">
+            <img
+              src="/image/bonnie-green.png"
+              class="w-[40px] rounded-full border border-black"
+              alt="image"
+            />
+            <div>
+              <h1 class="text-[14px] font-semibold">Bonnie Green</h1>
+              <p class="text-[#6B7280] text-sm">CTO at Open AI</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- footer  -->
-    <section class="bg-[#1A1A1A] md:flex justify-around text-white mt-20 p-4">
+    <section
+      class="bg-[#1A1A1A] md:flex justify-around md:grid-cols-2 text-white p-4"
+    >
       <div class="mt-5 md:leading-10">
         <p class="hover:text-[#552a18]">My account</p>
         <p class="hover:text-[#552a18]">Track Order</p>
@@ -512,9 +748,9 @@
       <div class="mt-5">
         <p>Follow us</p>
         <div class="flex gap-2">
-          <img src="/src/image/dfb.png" class="w-[30px]" />
-          <img src="/src/image/di.png" class="w-[30px]" />
-          <img src="/src/image/dyt.png" class="w-[30px]" />
+          <img src="/image/dfb.png" class="w-[30px]" />
+          <img src="/image/di.png" class="w-[30px]" />
+          <img src="/image/dyt.png" class="w-[30px]" />
         </div>
       </div>
     </section>
